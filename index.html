@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
     <link rel="stylesheet" href="assets/css/owl.transitions.css" type="text/css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="app/mapstyle.css">
 
     <title>Zoner | Slider with Search Box Homepage</title>
 
@@ -33,8 +34,8 @@
                 <div class="user-area">
                     <div class="actions">
                         <a href="create-agency.html" class="promoted">Create Agency</a>
-                        <a href="create-account.html" class="promoted"><strong>Register</strong></a>
-                        <a href="sign-in.html">Sign In</a>
+                        <a ui-sref="register" class="promoted"><strong>Register</strong></a>
+                        <a ui-sref="login">Sign In</a>
                     </div>
                     <div class="language-bar">
                         <a href="#" class="active"><img src="assets/img/flags/gb.png" alt=""></a>
@@ -54,7 +55,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <div class="navbar-brand nav" id="brand">
-                        <a href="index-google-map-fullscreen.html"><img src="assets/img/logo.png" alt="brand"></a>
+                        <a ui-sref="home"><img src="assets/img/logo.png" alt="brand"></a>
                     </div>
                 </div>
                 <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
@@ -77,8 +78,8 @@
                         </li>
                         <li class="has-child"><a href="#">Properties</a>
                             <ul class="child-navigation">
-                                <li><a href="property-detail.html">Property Detail</a></li>
-                                <li><a href="properties-listing.html">Masonry Listing</a></li>
+                                <li><a ui-sref="property">Property Detail</a></li>
+                                <li><a ui-sref="register">Masonry Listing</a></li>
                                 <li><a href="properties-listing-grid.html">Grid Listing</a></li>
                                 <li><a href="properties-listing-lines.html">Lines Listing</a></li>
                             </ul>
@@ -137,7 +138,10 @@
         </div><!-- /.container -->
     </div><!-- /.navigation -->
 
-  <ui-view></ui-view>
+
+
+
+    <ui-view></ui-view>
     <!-- Page Footer -->
     <footer id="page-footer">
         <div class="inner">
@@ -224,40 +228,27 @@
 </div>
 
 
-  <div ng-controller="test">
-    <h1>{{test}}</h1>
-  </div>
-
-
 <div id="overlay"></div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery-2.1.0.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+
 <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+
 <script src="app/app.js"></script>
 <script src="app/controllers.js"></script>
+<script src="bower_components/angular-resource/angular-resource.min.js"></script>
 <script src="app/services.js"></script>
+<script src="app/mapscript.js"></script>
 
-<script type="text/javascript" src="assets/js/smoothscroll.js"></script>
-<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="assets/js/bootstrap-select.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.placeholder.js"></script>
-<script type="text/javascript" src="assets/js/icheck.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.vanillabox-0.1.5.min.js"></script>
-<script type="text/javascript" src="assets/js/retina-1.1.0.min.js"></script>
-<script type="text/javascript" src="assets/js/jshashtable-2.1_src.js"></script>
-<script type="text/javascript" src="assets/js/jquery.numberformatter-1.2.3.js"></script>
-<script type="text/javascript" src="assets/js/tmpl.js"></script>
-<script type="text/javascript" src="assets/js/jquery.dependClass-0.1.js"></script>
-<script type="text/javascript" src="assets/js/draggable-0.1.js"></script>
-<script type="text/javascript" src="assets/js/jquery.slider.js"></script>
-<script type="text/javascript" src="assets/js/custom.js"></script>
 <!--[if gt IE 8]>
 <script type="text/javascript" src="assets/js/ie.js"></script>
 <![endif]-->
-<script>
+
+    <script>
+
     $(window).load(function(){
         initializeOwl(false);
     });

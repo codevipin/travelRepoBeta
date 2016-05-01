@@ -46,9 +46,65 @@
             </div>
         </div>
     </div>
-    <!-- end Slider -->
 
-    <!-- Search Box -->
+   
+<style>
+    #sty{
+    background-color: #1396e2;
+    padding: 25px;
+    border: 5px solid #1396e2;
+    margin: 25px;
+    }
+    #autocomplete{
+        width: 400px;
+        height: 40px;
+    }
+
+   
+</style>
+ <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+<div>
+
+    <form class="form-inline row" role="form"  id="sty">
+      <div class="form-group col-lg-2" id="gender" >
+  
+  <select class="form-control">
+  <option>Gender</option>
+  <option>Male</option>
+  <option>Female</option>
+  
+</select>
+</div>
+
+  <div class="form-group col-lg-5" >
+    
+    
+    <div id="locationField">
+      <input id="autocomplete" placeholder="Enter your address"
+             onFocus="geolocate()" type="text" ng-model=search></input>
+    </div>
+
+  </div>
+ <div class="form-group col-lg-2 " id="price">
+  
+  <select class="form-control">
+  <option>Upto 10000</option>
+  <option>Upto 20000</option>
+  <option>Upto 30000</option>
+  <option>Upto 40000</option>
+  
+</select>
+</div>
+    <div class="col-lg-3 ">
+        <div class="form-group">
+  <button type="submit" class="btn btn-success" id="submit">Submit</button>
+  </div>
+  </div>
+</form>
+    </div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMZobQrvJ-gq_1rc_xvHrtMBKMIPeMufU&libraries=places&callback=initAutocomplete"
+        async defer></script>
+  <!--  
     <div class="search-box-wrapper">
         <div class="search-box-inner">
             <div class="container">
@@ -66,7 +122,7 @@
                                         <option value="1">Rent</option>
                                         <option value="2">Sale</option>
                                     </select>
-                                </div><!-- /.form-group -->
+                                </div>
                                 <div class="form-group">
                                     <select name="country">
                                         <option value="">Country</option>
@@ -76,7 +132,7 @@
                                         <option value="4">Russia</option>
                                         <option value="5">United States</option>
                                     </select>
-                                </div><!-- /.form-group -->
+                                </div>
                                 <div class="form-group">
                                     <select name="city">
                                         <option value="">City</option>
@@ -86,7 +142,7 @@
                                         <option value="4">Houston</option>
                                         <option value="5">Philadelphia</option>
                                     </select>
-                                </div><!-- /.form-group -->
+                                </div>
                                 <div class="form-group">
                                     <select name="district">
                                         <option value="">District</option>
@@ -96,7 +152,7 @@
                                         <option value="4">Queens</option>
                                         <option value="5">Staten Island</option>
                                     </select>
-                                </div><!-- /.form-group -->
+                                </div>
                                 <div class="form-group">
                                     <select name="property-type">
                                         <option value="">Property Type</option>
@@ -106,7 +162,7 @@
                                         <option value="4">Flat</option>
                                         <option value="5">House</option>
                                     </select>
-                                </div><!-- /.form-group -->
+                                </div>
                                 <div class="form-group">
                                     <div class="price-range">
                                         <input id="price-input" type="text" name="price" value="1000;299000">
@@ -114,19 +170,22 @@
                                 </div>
                                 <div class="form-group">
                                     <button type="submit" class="btn btn-default">Search Now</button>
-                                </div><!-- /.form-group -->
-                            </form><!-- /#form-map -->
-                        </div><!-- /.search-box.map -->
-                    </div><!-- /.col-md-3 -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </div><!-- /.search-box-inner -->
-    </div>
-    <!-- end Search Box -->
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    
 
-    <!-- Page Content -->
+    <!-- end Search Box -->     <!-- Page Content -->
+
+    
+
     <div id="page-content">
-        <section id="banner">
+        <!-- <section id="banner">
             <div class="block has-dark-background background-color-default-darker center text-banner">
                 <div class="container">
                     <h1 class="no-bottom-margin no-border">Zoner Is Fully Loaded Real Estate Template with <a href="#" class="text-underline">Tons of Features</a>!</h1>
@@ -142,7 +201,7 @@
                             <figure class="icon"><i class="fa fa-folder"></i></figure>
                             <aside class="description">
                                 <header><h3>Wide Range of Properties</h3></header>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <p>Browse through several verified PGs and filter results based on locality, rates, amenities and more</p>
                                 <a href="properties-listing.html" class="link-arrow">Read More</a>
                             </aside>
                         </div><!-- /.feature-box -->
@@ -151,8 +210,8 @@
                         <div class="feature-box equal-height">
                             <figure class="icon"><i class="fa fa-users"></i></figure>
                             <aside class="description">
-                                <header><h3>14 Agents for Your Service</h3></header>
-                                <p>Aliquam gravida magna et fringilla convallis. Pellentesque habitant morbi </p>
+                                <header><h3>Comfort Level Analysis</h3></header>
+                                <p>We take your comfort level very serious and we analyse it thoroughly and provide you the best feedback </p>
                                 <a href="agents-listing.html" class="link-arrow">Read More</a>
                             </aside>
                         </div><!-- /.feature-box -->
@@ -162,7 +221,7 @@
                             <figure class="icon"><i class="fa fa-money"></i></figure>
                             <aside class="description">
                                 <header><h3>Best Price Guarantee!</h3></header>
-                                <p>Phasellus non viverra tortor, id auctor leo. Suspendisse id nibh placerat</p>
+                                <p>We do not take any money form our users, the platform is totally free to use. You only pay the rent rest is on us!!</p>
                                 <a href="#" class="link-arrow">Read More</a>
                             </aside>
                         </div><!-- /.feature-box -->
@@ -170,143 +229,43 @@
                 </div><!-- /.row -->
             </div><!-- /.container -->
         </section><!-- /#our-services -->
-        <section id="price-drop" class="block">
+       
+        
+        <section id="new-properties" class="block">
             <div class="container">
                 <header class="section-title">
-                    <h2>Price Drop</h2>
+                    <h2>New Properties for You</h2>
                     <a href="properties-listing.html" class="link-arrow">All Properties</a>
                 </header>
                 <div class="row">
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-4 col-sm-6" ng-repeat="pro in property | filter: search" style="margin-bottom: 20px">
                         <div class="property">
                             <a href="property-detail.html">
                                 <div class="property-image">
-                                    <img alt="" src="assets/img/properties/property-06.jpg">
+                                    <img alt="" src="assets/img/properties/property-09.jpg">
                                 </div>
                                 <div class="overlay">
                                     <div class="info">
-                                        <div class="tag price">$ 11,000</div>
-                                        <h3>3398 Lodgeville Road</h3>
-                                        <figure>Golden Valley, MN 55427</figure>
+                                        <div class="tag price">$ {{pro.price}}</div>
+                                        <h3>{{pro.name}}</h3>
+                                        <figure>{{pro.location}}</figure>
                                     </div>
                                     <ul class="additional-info">
                                         <li>
                                             <header>Area:</header>
-                                            <figure>240m<sup>2</sup></figure>
+                                            <figure>{{pro.area}}m<sup>2</sup></figure>
                                         </li>
                                         <li>
                                             <header>Beds:</header>
-                                            <figure>2</figure>
+                                            <figure>{{pro.beds}}</figure>
                                         </li>
                                         <li>
                                             <header>Baths:</header>
-                                            <figure>2</figure>
+                                            <figure>{{pro.bath}}</figure>
                                         </li>
                                         <li>
                                             <header>Garages:</header>
-                                            <figure>0</figure>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </a>
-                        </div><!-- /.property -->
-                    </div><!-- /.col-md-3 -->
-                    <div class="col-md-3 col-sm-6">
-                        <div class="property">
-                            <a href="property-detail.html">
-                                <div class="property-image">
-                                    <img alt="" src="assets/img/properties/property-04.jpg">
-                                </div>
-                                <div class="overlay">
-                                    <div class="info">
-                                        <div class="tag price">$ 38,000</div>
-                                        <h3>2186 Rinehart Road</h3>
-                                        <figure>Doral, FL 33178 </figure>
-                                    </div>
-                                    <ul class="additional-info">
-                                        <li>
-                                            <header>Area:</header>
-                                            <figure>240m<sup>2</sup></figure>
-                                        </li>
-                                        <li>
-                                            <header>Beds:</header>
-                                            <figure>3</figure>
-                                        </li>
-                                        <li>
-                                            <header>Baths:</header>
-                                            <figure>1</figure>
-                                        </li>
-                                        <li>
-                                            <header>Garages:</header>
-                                            <figure>1</figure>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </a>
-                        </div><!-- /.property -->
-                    </div><!-- /.col-md-3 -->
-                    <div class="col-md-3 col-sm-6">
-                        <div class="property">
-                            <a href="property-detail.html">
-                                <div class="property-image">
-                                    <img alt="" src="assets/img/properties/property-07.jpg">
-                                </div>
-                                <div class="overlay">
-                                    <div class="info">
-                                        <div class="tag price">$ 325,000</div>
-                                        <h3>3705 Brighton Circle Road</h3>
-                                        <figure>Glenwood, MN 56334</figure>
-                                    </div>
-                                    <ul class="additional-info">
-                                        <li>
-                                            <header>Area:</header>
-                                            <figure>240m<sup>2</sup></figure>
-                                        </li>
-                                        <li>
-                                            <header>Beds:</header>
-                                            <figure>3</figure>
-                                        </li>
-                                        <li>
-                                            <header>Baths:</header>
-                                            <figure>1</figure>
-                                        </li>
-                                        <li>
-                                            <header>Garages:</header>
-                                            <figure>1</figure>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </a>
-                        </div><!-- /.property -->
-                    </div><!-- /.col-md-3 -->
-                    <div class="col-md-3 col-sm-6">
-                        <div class="property">
-                            <a href="property-detail.html">
-                                <div class="property-image">
-                                    <img alt="" src="assets/img/properties/property-08.jpg">
-                                </div>
-                                <div class="overlay">
-                                    <div class="info">
-                                        <div class="tag price">$ 16,000</div>
-                                        <h3>362 Lynn Ogden Lane</h3>
-                                        <figure>Galveston, TX 77550</figure>
-                                    </div>
-                                    <ul class="additional-info">
-                                        <li>
-                                            <header>Area:</header>
-                                            <figure>240m<sup>2</sup></figure>
-                                        </li>
-                                        <li>
-                                            <header>Beds:</header>
-                                            <figure>3</figure>
-                                        </li>
-                                        <li>
-                                            <header>Baths:</header>
-                                            <figure>1</figure>
-                                        </li>
-                                        <li>
-                                            <header>Garages:</header>
-                                            <figure>1</figure>
+                                            <figure>{{pro.garage}}</figure>
                                         </li>
                                     </ul>
                                 </div>
@@ -314,8 +273,9 @@
                         </div><!-- /.property -->
                     </div><!-- /.col-md-3 -->
                 </div><!-- /.row-->
-            </div><!-- /.container -->
-        </section><!-- /#price-drop -->
+            </div><!-- /.container-->
+        </section><!-- /#new-properties-->
+
         <aside id="advertising" class="block">
             <div class="container">
                 <a href="submit.html">
@@ -328,290 +288,7 @@
                 </a>
             </div>
         </aside><!-- /#adveritsing-->
-        <section id="new-properties" class="block">
-            <div class="container">
-                <header class="section-title">
-                    <h2>New Properties for You</h2>
-                    <a href="properties-listing.html" class="link-arrow">All Properties</a>
-                </header>
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <div class="property">
-                            <a href="property-detail.html">
-                                <div class="property-image">
-                                    <img alt="" src="assets/img/properties/property-09.jpg">
-                                </div>
-                                <div class="overlay">
-                                    <div class="info">
-                                        <div class="tag price">$ 11,000</div>
-                                        <h3>3398 Lodgeville Road</h3>
-                                        <figure>Golden Valley, MN 55427</figure>
-                                    </div>
-                                    <ul class="additional-info">
-                                        <li>
-                                            <header>Area:</header>
-                                            <figure>240m<sup>2</sup></figure>
-                                        </li>
-                                        <li>
-                                            <header>Beds:</header>
-                                            <figure>2</figure>
-                                        </li>
-                                        <li>
-                                            <header>Baths:</header>
-                                            <figure>2</figure>
-                                        </li>
-                                        <li>
-                                            <header>Garages:</header>
-                                            <figure>0</figure>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </a>
-                        </div><!-- /.property -->
-                    </div><!-- /.col-md-3 -->
-                    <div class="col-md-3 col-sm-6">
-                        <div class="property">
-                            <a href="property-detail.html">
-                                <div class="property-image">
-                                    <img alt="" src="assets/img/properties/property-03.jpg">
-                                </div>
-                                <div class="overlay">
-                                    <div class="info">
-                                        <div class="tag price">$ 38,000</div>
-                                        <h3>2186 Rinehart Road</h3>
-                                        <figure>Doral, FL 33178 </figure>
-                                    </div>
-                                    <ul class="additional-info">
-                                        <li>
-                                            <header>Area:</header>
-                                            <figure>240m<sup>2</sup></figure>
-                                        </li>
-                                        <li>
-                                            <header>Beds:</header>
-                                            <figure>3</figure>
-                                        </li>
-                                        <li>
-                                            <header>Baths:</header>
-                                            <figure>1</figure>
-                                        </li>
-                                        <li>
-                                            <header>Garages:</header>
-                                            <figure>1</figure>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </a>
-                        </div><!-- /.property -->
-                    </div><!-- /.col-md-3 -->
-                    <div class="col-md-3 col-sm-6">
-                        <div class="property">
-                            <a href="property-detail.html">
-                                <div class="property-image">
-                                    <img alt="" src="assets/img/properties/property-06.jpg">
-                                </div>
-                                <div class="overlay">
-                                    <div class="info">
-                                        <div class="tag price">$ 325,000</div>
-                                        <h3>3705 Brighton Circle Road</h3>
-                                        <figure>Glenwood, MN 56334</figure>
-                                    </div>
-                                    <ul class="additional-info">
-                                        <li>
-                                            <header>Area:</header>
-                                            <figure>240m<sup>2</sup></figure>
-                                        </li>
-                                        <li>
-                                            <header>Beds:</header>
-                                            <figure>3</figure>
-                                        </li>
-                                        <li>
-                                            <header>Baths:</header>
-                                            <figure>1</figure>
-                                        </li>
-                                        <li>
-                                            <header>Garages:</header>
-                                            <figure>1</figure>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </a>
-                        </div><!-- /.property -->
-                    </div><!-- /.col-md-3 -->
-                    <div class="col-md-3 col-sm-6">
-                        <div class="property">
-                            <a href="property-detail.html">
-                                <div class="property-image">
-                                    <img alt="" src="assets/img/properties/property-01.jpg">
-                                </div>
-                                <div class="overlay">
-                                    <div class="info">
-                                        <div class="tag price">$ 16,000</div>
-                                        <h3>362 Lynn Ogden Lane</h3>
-                                        <figure>Galveston, TX 77550</figure>
-                                    </div>
-                                    <ul class="additional-info">
-                                        <li>
-                                            <header>Area:</header>
-                                            <figure>240m<sup>2</sup></figure>
-                                        </li>
-                                        <li>
-                                            <header>Beds:</header>
-                                            <figure>3</figure>
-                                        </li>
-                                        <li>
-                                            <header>Baths:</header>
-                                            <figure>1</figure>
-                                        </li>
-                                        <li>
-                                            <header>Garages:</header>
-                                            <figure>1</figure>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </a>
-                        </div><!-- /.property -->
-                    </div><!-- /.col-md-3 -->
-                </div><!-- /.row-->
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <div class="property">
-                            <a href="property-detail.html">
-                                <div class="property-image">
-                                    <img alt="" src="assets/img/properties/property-02.jpg">
-                                </div>
-                                <div class="overlay">
-                                    <div class="info">
-                                        <div class="tag price">$ 18,000</div>
-                                        <h3>2506 B Street</h3>
-                                        <figure>New Brighton, MN 55112</figure>
-                                    </div>
-                                    <ul class="additional-info">
-                                        <li>
-                                            <header>Area:</header>
-                                            <figure>280m<sup>2</sup></figure>
-                                        </li>
-                                        <li>
-                                            <header>Beds:</header>
-                                            <figure>3</figure>
-                                        </li>
-                                        <li>
-                                            <header>Baths:</header>
-                                            <figure>2</figure>
-                                        </li>
-                                        <li>
-                                            <header>Garages:</header>
-                                            <figure>1</figure>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </a>
-                        </div><!-- /.property -->
-                    </div><!-- /.col-md-3 -->
-                    <div class="col-md-3 col-sm-6">
-                        <div class="property">
-                            <a href="property-detail.html">
-                                <div class="property-image">
-                                    <img alt="" src="assets/img/properties/property-12.jpg">
-                                </div>
-                                <div class="overlay">
-                                    <div class="info">
-                                        <div class="tag price">$ 136,000</div>
-                                        <h3>3990 Late Avenue</h3>
-                                        <figure>Kingfisher, OK 73750</figure>
-                                    </div>
-                                    <ul class="additional-info">
-                                        <li>
-                                            <header>Area:</header>
-                                            <figure>30m<sup>2</sup></figure>
-                                        </li>
-                                        <li>
-                                            <header>Beds:</header>
-                                            <figure>1</figure>
-                                        </li>
-                                        <li>
-                                            <header>Baths:</header>
-                                            <figure>1</figure>
-                                        </li>
-                                        <li>
-                                            <header>Garages:</header>
-                                            <figure>0</figure>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </a>
-                        </div><!-- /.property -->
-                    </div><!-- /.col-md-3 -->
-                    <div class="col-md-3 col-sm-6">
-                        <div class="property">
-                            <a href="property-detail.html">
-                                <div class="property-image">
-                                    <img alt="" src="assets/img/properties/property-05.jpg">
-                                </div>
-                                <div class="overlay">
-                                    <div class="info">
-                                        <div class="tag price">$ 12,680</div>
-                                        <h3>297 Marie Street</h3>
-                                        <figure>Towson, MD 21204 </figure>
-                                    </div>
-                                    <ul class="additional-info">
-                                        <li>
-                                            <header>Area:</header>
-                                            <figure>240m<sup>2</sup></figure>
-                                        </li>
-                                        <li>
-                                            <header>Beds:</header>
-                                            <figure>3</figure>
-                                        </li>
-                                        <li>
-                                            <header>Baths:</header>
-                                            <figure>1</figure>
-                                        </li>
-                                        <li>
-                                            <header>Garages:</header>
-                                            <figure>1</figure>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </a>
-                        </div><!-- /.property -->
-                    </div><!-- /.col-md-3 -->
-                    <div class="col-md-3 col-sm-6">
-                        <div class="property">
-                            <a href="property-detail.html">
-                                <div class="property-image">
-                                    <img alt="" src="assets/img/properties/property-10.jpg">
-                                </div>
-                                <div class="overlay">
-                                    <div class="info">
-                                        <div class="tag price">$ 12,800</div>
-                                        <h3>64 Timberbrook Lane</h3>
-                                        <figure>Denver, CO 80202</figure>
-                                    </div>
-                                    <ul class="additional-info">
-                                        <li>
-                                            <header>Area:</header>
-                                            <figure>240m<sup>2</sup></figure>
-                                        </li>
-                                        <li>
-                                            <header>Beds:</header>
-                                            <figure>3</figure>
-                                        </li>
-                                        <li>
-                                            <header>Baths:</header>
-                                            <figure>1</figure>
-                                        </li>
-                                        <li>
-                                            <header>Garages:</header>
-                                            <figure>1</figure>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </a>
-                        </div><!-- /.property -->
-                    </div><!-- /.col-md-3 -->
-                </div><!-- /.row-->
-            </div><!-- /.container-->
-        </section><!-- /#new-properties-->
+
         <section id="testimonials" class="block">
             <div class="container">
                 <header class="section-title"><h2>Testimonials</h2></header>

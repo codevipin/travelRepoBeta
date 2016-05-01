@@ -1,0 +1,208 @@
+{
+  "property": [
+    {
+      "id": 0,
+      "name": "Vipin1",
+      "location": "White1",
+      "price": 5500,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et dui vestibulum,bibendum purus sit amet, vulputate mauris. Ut adipiscing gravida tincidunt...",
+      "frontimg": "assets/img/properties/property-detail-01.jpg",
+      "bedroomimg": "assets/img/properties/property-detail-02.jpg",
+      "bathroomimg": "assets/img/properties/property-detail-03.jpg",
+      "propertytype": "House",
+      "status": "sale",
+      "area": 880,
+      "beds": 3,
+      "bath": 2,
+      "garage": 1,
+      "rating": 4,
+      "facility": [
+        {
+          "fac": "Sauna"
+        },
+        {
+          "fac": "Outdoor Kitchen"
+        },
+        {
+          "fac": "Trees and Landscaping"
+        },
+        {
+          "fac": "Concrete Flooring"
+        },
+        {
+          "fac": "Fireplace or fire pit"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Vipin2",
+      "location": "White2",
+      "price": 6500,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et dui vestibulum,bibendum purus sit amet, vulputate mauris. Ut adipiscing gravida tincidunt...",
+      "frontimg": "assets/img/properties/property-detail-01.jpg",
+      "bedroomimg": "assets/img/properties/property-detail-02.jpg",
+      "bathroomimg": "assets/img/properties/property-detail-03.jpg",
+      "propertytype": "House",
+      "status": "sale",
+      "area": 680,
+      "beds": 4,
+      "bath": 2,
+      "garage": 2,
+      "rating": 3,
+      "facility": [
+        {
+          "fac": "Sauna"
+        },
+        {
+          "fac": "Outdoor Kitchen"
+        },
+        {
+          "fac": "Trees and Landscaping"
+        },
+        {
+          "fac": "Concrete Flooring"
+        },
+        {
+          "fac": "Fireplace or fire pit"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Vipin3",
+      "location": "White3",
+      "price": 7500,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et dui vestibulum,bibendum purus sit amet, vulputate mauris. Ut adipiscing gravida tincidunt...",
+      "frontimg": "assets/img/properties/property-detail-01.jpg",
+      "bedroomimg": "assets/img/properties/property-detail-02.jpg",
+      "bathroomimg": "assets/img/properties/property-detail-03.jpg",
+      "propertytype": "House",
+      "status": "sale",
+      "area": 480,
+      "beds": 2,
+      "bath": 2,
+      "garage": 6,
+      "rating": 1,
+      "facility": [
+        {
+          "fac": "Sauna"
+        },
+        {
+          "fac": "Outdoor Kitchen"
+        },
+        {
+          "fac": "Trees and Landscaping"
+        },
+        {
+          "fac": "Concrete Flooring"
+        },
+        {
+          "fac": "Fireplace or fire pit"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Vipin1",
+      "location": "White1",
+      "price": 5500,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et dui vestibulum,bibendum purus sit amet, vulputate mauris. Ut adipiscing gravida tincidunt...",
+      "frontimg": "assets/img/properties/property-detail-01.jpg",
+      "bedroomimg": "assets/img/properties/property-detail-02.jpg",
+      "bathroomimg": "assets/img/properties/property-detail-03.jpg",
+      "propertytype": "House",
+      "status": "sale",
+      "area": 880,
+      "beds": 3,
+      "bath": 2,
+      "garage": 1,
+      "rating": 4,
+      "facility": [
+        {
+          "fac": "Sauna"
+        },
+        {
+          "fac": "Outdoor Kitchen"
+        },
+        {
+          "fac": "Trees and Landscaping"
+        },
+        {
+          "fac": "Concrete Flooring"
+        },
+        {
+          "fac": "Fireplace or fire pit"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Vipin2",
+      "location": "White2",
+      "price": 6500,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et dui vestibulum,bibendum purus sit amet, vulputate mauris. Ut adipiscing gravida tincidunt...",
+      "frontimg": "assets/img/properties/property-detail-01.jpg",
+      "bedroomimg": "assets/img/properties/property-detail-02.jpg",
+      "bathroomimg": "assets/img/properties/property-detail-03.jpg",
+      "propertytype": "House",
+      "status": "sale",
+      "area": 680,
+      "beds": 4,
+      "bath": 2,
+      "garage": 2,
+      "rating": 3,
+      "facility": [
+        {
+          "fac": "Sauna"
+        },
+        {
+          "fac": "Outdoor Kitchen"
+        },
+        {
+          "fac": "Trees and Landscaping"
+        },
+        {
+          "fac": "Concrete Flooring"
+        },
+        {
+          "fac": "Fireplace or fire pit"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Vipin3",
+      "location": "White3",
+      "price": 7500,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et dui vestibulum,bibendum purus sit amet, vulputate mauris. Ut adipiscing gravida tincidunt...",
+      "frontimg": "assets/img/properties/property-detail-01.jpg",
+      "bedroomimg": "assets/img/properties/property-detail-02.jpg",
+      "bathroomimg": "assets/img/properties/property-detail-03.jpg",
+      "propertytype": "House",
+      "status": "sale",
+      "area": 480,
+      "beds": 2,
+      "bath": 2,
+      "garage": 6,
+      "rating": 1,
+      "facility": [
+        {
+          "fac": "Sauna"
+        },
+        {
+          "fac": "Outdoor Kitchen"
+        },
+        {
+          "fac": "Trees and Landscaping"
+        },
+        {
+          "fac": "Concrete Flooring"
+        },
+        {
+          "fac": "Fireplace or fire pit"
+        }
+      ]
+    }
+  ]
+}
